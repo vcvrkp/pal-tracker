@@ -32,12 +32,10 @@ public class EnvController {
     @GetMapping("/env")
     public Map<String, String> getEnv() {
         Map<String, String> env = new HashMap<>();
-
         env.put("PORT", port);
         env.put("MEMORY_LIMIT", memoryLimit);
         env.put("CF_INSTANCE_INDEX", cfInstanceIndex);
         env.put("CF_INSTANCE_ADDR", cfInstanceAddress);
-
         return env;
     }
 }
